@@ -19,7 +19,10 @@ set history=1000
 set autoindent
 set smartindent
 set tabstop=4
+set softtabstop=4
 set shiftwidth=4
+set smarttab
+set expandtab
 
 " highlight brace match
 set showmatch

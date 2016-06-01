@@ -70,3 +70,11 @@ autocmd FileType php noremap <C-M> :w!<CR>:!php %<CR>
 autocmd FileType javascript noremap <C-M> :w!<CR>:!node --harmony %<CR>
 " 执行shell脚本
 autocmd FileType sh noremap <C-M> :w!<CR>:!sh %<CR>
+
+nnoremap <leader>h :set filetype=html<CR>
+nnoremap <leader>c :set filetype=css<CR>
+nnoremap <leader>j :set filetype=javascript<CR>
+nnoremap <leader>p :set filetype=php<CR>
+nnoremap <leader>a :set filetype=actionscript<CR>
+
+setlocal foldmethod=syntax

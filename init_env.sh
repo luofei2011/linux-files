@@ -6,6 +6,7 @@ date=`date +%Y%m%d`
 mv $HOME/.vimrc $HOME/.vimrc$date
 
 cp ./.vimrc $HOME/
+cp -rf .vim $HOME/
 
 # for tmux
 mv $HOME/.tmux.conf $HOME/.tmux.conf$date

@@ -9,6 +9,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mattn/emmet-vim'
 Plugin 'kien/ctrlp.vim'
+Plugin 'mxw/vim-jsx'
 
 call vundle#end()
 filetype plugin indent on
@@ -51,6 +52,10 @@ let NERDTreeWinSize=20
 set regexpengine=1
 let b:javascript_fold=0
 
+" vim-jsx
+let g:jsx_ext_required = 0
+let g:jsx_pragma_required = 1
+
 " ctrlp.vim
 let g:ctrlp_map = '..'
 let g:ctrlp_open_multiple_files = 'v' 
@@ -78,3 +83,8 @@ nnoremap <leader>p :set filetype=php<CR>
 nnoremap <leader>a :set filetype=actionscript<CR>
 
 setlocal foldmethod=syntax
+
+" filetype and file highlight
+au FileType less set ft=css syntax=css
+au FileType javascript set dictionary=~/.vim/dict/javascript.dict
+au FileType javascript set dictionary+=~/.vim/dict/node.dict

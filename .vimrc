@@ -10,6 +10,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'mattn/emmet-vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'mxw/vim-jsx'
+Plugin 'Yggdroot/indentLine'
 
 call vundle#end()
 filetype plugin indent on

@@ -12,6 +12,7 @@ Plugin 'mattn/emmet-vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'mxw/vim-jsx'
 Plugin 'Yggdroot/indentLine'
+Plugin 'posva/vim-vue'
 
 call vundle#end()
 filetype plugin indent on
@@ -55,8 +56,8 @@ set regexpengine=1
 let b:javascript_fold=0
 
 " vim-jsx
-let g:jsx_ext_required = 0
-let g:jsx_pragma_required = 1
+"let g:jsx_ext_required = 0
+"let g:jsx_pragma_required = 1
 
 " ctrlp.vim
 let g:ctrlp_map = '..'
@@ -77,6 +78,8 @@ autocmd FileType php noremap <C-M> :w!<CR>:!php %<CR>
 autocmd FileType javascript noremap <C-M> :w!<CR>:!node --harmony %<CR>
 " 执行shell脚本
 autocmd FileType sh noremap <C-M> :w!<CR>:!sh %<CR>
+" vue
+autocmd BufRead,BufNewFile *.vue setlocal filetype=vue.html.javascript.css
 
 nnoremap <leader>h :set filetype=html<CR>
 nnoremap <leader>c :set filetype=css<CR>

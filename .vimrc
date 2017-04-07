@@ -1,4 +1,5 @@
 set nocompatible
+set backspace=indent,eol,start
 filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim

@@ -93,3 +93,13 @@ setlocal foldmethod=syntax
 au FileType less set ft=css syntax=css
 au FileType javascript set dictionary=~/.vim/dict/javascript.dict
 au FileType javascript set dictionary+=~/.vim/dict/node.dict
+
+let g:indentLine_setColors = 0
+
+let g:user_emmet_install_global=0
+autocmd FileType html,css,javascript.jsx EmmetInstall
+let g:user_emmet_settings = {
+\  'javascript.jsx' : {
+\      'extends' : 'jsx',
+\  },
+\}

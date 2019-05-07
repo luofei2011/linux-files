@@ -54,6 +54,9 @@ let NERDTreeWinSize=20
 " vim-javascript
 set regexpengine=1
 let b:javascript_fold=0
+" 解决js书写过程中链式调用自动缩进一行的问题
+" https://github.com/pangloss/vim-javascript/issues/467
+let g:javascript_opfirst=1
 
 " vim-jsx
 "let g:jsx_ext_required = 0

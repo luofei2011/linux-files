@@ -1,6 +1,6 @@
 #!/bin/bash
 date=`date +%Y%m%d`
-dbs=( 'heibaipig' 'app_poised' 'rss_vim_ren' 'theast_blog' 'zll160_blog' )
+dbs=( 'db1' 'db2' )
 backup_path=$HOME/backup/sql/${date}
 
 if [ ! -d ${backup_path} ]
